@@ -1,0 +1,529 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+/* CSS Document */
+/* light blue     #00bff3   */
+/* dark blue     #09F  */
+@import url(bootstrap.css);
+@import url(fullcalendar.css);
+
+body {
+    font-family: 'Lato', sans-ser7f; 
+    font-size: 14px; /*margin: 0 to remove user agent style sheet border*/;
+    color: #585858;
+    text-decoration:none;	
+}
+
+.container {
+    /* Main setting for all container divs*/
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+/* Navigation Bar ============================================================*/
+.navbar {
+    /* main div behind fixed nav elements */
+    background:  #09F;
+    margin-bottom: 0px;	
+    font-size: 18px;
+}
+
+.navbar-brand {	
+    /* UCC CONNECT text */
+    padding: 0px;
+    margin-left: 20px;
+    padding-top: 5px;   
+}
+
+body > div.navbar.navbar-inverse.navbar-fixed-top > a > img{
+
+    float:right;
+    margin-left: 10px;
+    margin-top:9px;
+    border: #fff solid 1px;  
+}
+
+body > div.navbar.navbar-inverse.navbar-fixed-top{
+    height: 60px;
+}
+.navbar-inverse{
+
+    border: 0;   
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0, 0, 0, 0.25)); 
+    background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0, 0, 0, 0.25)); 
+    background-image:     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0, 0, 0, 0.25)); 
+    background-image:      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0, 0, 0, 0.25)); 
+}
+
+
+body > div.navbar.navbar-inverse.navbar-fixed-top > div.navbar-collapse.navHeaderCollapse.collapse{
+    /* menu elements in nav bar*/
+
+    margin-right: 40px;
+    padding: 0px;  
+    float:right;
+    padding-top: 5px;
+
+}
+body > div.navbar.navbar-inverse.navbar-fixed-top > a{
+    color: #fff;
+    font-size: 32px;
+
+}
+
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover, .navbar .nav > li > a { 
+    color: #D8D8D8;    
+}
+
+/* Remove the Hover/Focus Colors  */
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+    color: #fff; 
+    text-decoration: overline;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+/* Navigation Icon when on small screen  ============================================================*/
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+.container .landing {
+    padding: 0px;
+    background: url("../images/WGB.jpg")  fixed;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+
+    color: #fff;
+    padding-top: 100px;
+    text-align: center;
+}
+.container .landing img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+.container p {
+
+    padding-bottom: 40px;
+
+}
+.container .row img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.container .row {
+    padding-top:50px;	
+    width: 70%;
+    display: block;
+    margin:  0 auto;
+}
+
+body > div.studentlinks > div {
+    background-color: #09F;
+
+}
+
+body > div.studentlinks > div {
+    padding: 20px 20px;
+    background: #fff;  
+    border-bottom: 3px solid #FFBF00;
+}
+body > div.studentlinks > div img {
+    margin: 0px 30px 0px 30px;
+}
+
+
+body > div.bannertext > div{
+    text-align:center;
+    color: #fff;
+    padding: 1em 1em;	
+    background: -webkit-linear-gradient(#09F,#fff);/*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#09F,#fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#09F,#fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#09F,#fff); /* Standard syntax (must be last) */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0, 0, 0, 0.17), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0, 0, 0, 0.17), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0, 0, 0, 0.17), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0, 0, 0, 0.17), rgba(0,0,0,0)); 
+}
+
+.godown > span {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 2em;
+}
+p{
+    font-size:1.5em;
+}
+.text-muted{
+
+    color:#2E2E2E;
+}
+h2{
+    font-weight: bold;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+form    {
+    margin:auto;
+    position:relative;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    padding:10px;
+}
+
+label{
+    padding-top:15px;
+    display:block;
+    margin-bottom: 0px;
+}
+
+input{
+    width:100%;
+    display:block;
+
+}
+
+select{
+    padding:5px 5px;
+    display:block;
+}
+.streams label{
+
+    background-color: #E3E3E3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type='checkbox'] {
+    width:auto;
+    display:inline;
+    margin-left: 5px;
+    height:20px;
+    width: 20px;
+    float: right;
+
+}
+
+.compSci, .webSys{
+    padding-top:15px;
+}
+
+.compSci label, .webSys label{
+    padding-top:0px;
+}
+
+.landing a
+{	
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 5px solid #009900;
+    border: 3px solid #fff;
+    font-family: inherit;
+    font-size:1.5em;
+    color: white;
+    display:block; 
+    background: url("../images/greenswirl.jpg");
+    background-position: center;
+    cursor: pointer;
+    width: 30%;		
+    letter-spacing: 2px;	
+    outline: none;		
+    margin:0 auto;
+    text-decoration: none;
+    padding:10px 10px;
+}
+
+.landing a:hover
+{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #15a1ea;
+    background: #fff;
+    border: 3px solid #fff;
+    font-weight:500;
+    display:block; 
+}
+
+/*Modal Windows ===========================*/
+
+.modal{
+
+    color:#2E2E2E;
+}
+
+.action_btns{
+    margin-top:20px;
+}
+.modal-dialog {
+    margin: 20px auto; 
+}
+
+.close {
+    font-size: 40px;
+    line-height: 18px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    text-decoration: none;
+}
+.close:hover {
+    color: #FE2E2E;
+    text-decoration: none;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: pointer;
+}
+
+
+.modal-header {
+    height:65px;
+    filter: alpha(opacity=50);
+    opacity: .9; 
+    background: #09F;
+}
+
+.modal-header p{
+    width: 50%;
+    float:left;
+    margin-left: 6px;
+    color:#fff;
+}
+
+div.modal-dialog > div > div.modal-header > button{
+    padding-top:6px;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .9; 
+    background: url("../images/swirl.jpg");
+    background-size: 100% 100%;
+}
+
+#log > div:nth-child(3) > a{
+    margin-left: 20px;
+}
+
+
+
+footer{
+    color:#6E6E6E;
+    text-align:center;
+    padding: 1em 1em;
+    background:#D8D8D8;
+    border-top: 3px solid #FFBF00;
+    margin-top:20px;
+
+}
+
+@media screen and (max-width: 765px) {
+    body > div.studentlinks > div img {
+        margin: 0px 5px 0px 5px;
+        width:25%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+
+    body > div.navbar.navbar-inverse.navbar-fixed-top > div.navbar-collapse.navHeaderCollapse.collapse{
+        /* menu elements in nav bar*/
+
+        margin-right: 40px;
+        padding: 0px;
+        width:100%;
+        float: none;
+        padding-top: 5px;
+
+    }
+
+    body > div.navbar.navbar-inverse.navbar-fixed-top > div.navbar-collapse.navHeaderCollapse.collapse.in > ul{
+
+        width:100%;
+        margin-left: 0px;
+    }
+    ul{
+        background-color:  #09F;
+    }
+
+    .navbar-nav {
+        margin: 0px;
+    }
+
+    body > div.navbar.navbar-inverse.navbar-fixed-top > a{
+        color: #fff;
+        font-size: 0%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .landing a
+    {	
+
+        font-size:1.5em;
+
+
+        background-position: center;
+        cursor: pointer;
+        width: 50%;		
+
+    }
+}
+
+
+body > div.navbar.navbar-inverse.navbar-fixed-top > div.navbar-collapse.navHeaderCollapse.collapse.in{
+
+    padding: 0px;
+    lfloat: right;
+}
+/* Scheduler Page*/
+
+
+#scheduler_container > div{
+    width: 95%;
+    padding-top: 110px;
+}
+
+
+.dropdown-menu {
+    width: 200px !important;
+    background-color: #09F; 
+    color: #fff;
+}
+
+.dropdown-menu input {
+
+    color: #204d74;
+}
+
+.ui-datepicker {
+    background: #fff; /* Old browsers */
+    background: #fff -moz-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* FF3.6+ */
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc)), color-stop(100%,#fff); /* Chrome,Safari4+ */
+    background: #fff -webkit-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* Chrome10+,Safari5.1+ */
+    background: #fff -o-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* Opera11.10+ */
+    background: #fff -ms-linear-gradient(top, #fcfcfc 0%, #fff 100%); /* IE10+ */
+    background: #fff linear-gradient(top, #fcfcfc 0%, #fff 100%); /* W3C */
+    font-size:11px;
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+.ui-datepicker table {
+    width:278px;
+}
+
+.ui-datepicker table td {
+    text-align:center;
+}
+
+.ui-datepicker a {
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.ui-datepicker-prev {
+}
+
+.ui-datepicker-next {
+    float:right;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-weight:bold;
+}
+
+#avatar{
+    width: 150px;
+    height: auto;
+}
+
+.subpage {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;
+	border: 20px;
+        text-align: center;
+}
+
+.subpage button {
+    width: 70%
+}
+
+.subpage form {
+    text-align: left;
+}
+
+.subpage .btn {
+    margin-top: 10px;
+}
+
+.subpage .form-group {
+    margin-bottom: 5px;
+}
+
+.col-lg-2 .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .hiuser {
+    padding-bottom: 20px;
+}
+
+.notif-row {
+    display: block;
+    background-color: #E3E3E3;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
